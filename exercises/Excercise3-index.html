@@ -8,12 +8,8 @@
             padding: 10px;
             box-sizing: border-box;
          }
-         .picture {
-            float: above;
-            width: 33.33%;
-            padding: 10px;
-            box-sizing: border-box;
-         }
+      
+         
          .row::after {
             content: "";
             clear: both;
@@ -26,34 +22,36 @@
   color: white;
   font-size: 30px;
 }
+.main {
+   margin: 0 auto;
+   max-width: 1200px
+}
+img {
+width: 100%;
+height: auto;
+}
 
       </style>
    </head>
    <body>
+      <main>
       <div class="row">
         <div class="header">
             <h1>Header</h1>
-            <p>WOOOOO</p>
+            <p>WOOOOO </p>
           </div>
-        <div class="picture">
-    
-        </div>
+       
          <div class="column">
             <h2>Column 1</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in enim vel justo convallis luctus a quis nisi.</p>
          </div>
 
-         <div class="picture">
-    
-         </div>
+      
          <div class="column">
             <h2>Column 2</h2>
             <p>Phasellus eu purus nibh. Fusce lacinia risus euismod felis tempus pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
          </div>
 
-         <div class="picture">
-    
-         </div>
          <div class="column">
             <h2>Column 3</h2>
             <p>Suspendisse et ligula convallis, hendrerit turpis vitae, placerat nunc. Sed convallis metus varius urna viverra eleifend.</p>
@@ -66,21 +64,16 @@
 
         
         
-        <div class="picture">
-   
-        </div>
         <div class="column">
            <h2>Column 2</h2>
            <p>Phasellus eu purus nibh. Fusce lacinia risus euismod felis tempus pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
         </div>
 
-        <div class="picture">
-   
-        </div>
         <div class="column">
            <h2>Column 3</h2>
            <p>Suspendisse et ligula convallis, hendrrit turpis vitae, placerat nunc. Sed convallis metus varius urna viverra eleifend.</p>
         </div>
       </div>
+   </main>
    </body>
 </html>
