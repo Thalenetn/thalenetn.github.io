@@ -1,19 +1,108 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-.newspaper {
-  column-count: 4;
+   <head>
+      <style>
+         .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            box-sizing: border-box;
+         }
+      .h2{
+        font-family: 'Times New Roman', Times, serif;
+      }
+         
+         .row::after {
+            content: "";
+            clear: both;
+            display: table;
+         }
+         .header {
+  padding: 60px;
+  text-align: center;
+  background: #e48d78;
+  color: white;
+  font-size: 30px;
 }
-</style>
-</head>
-<body>
+.main {
+   margin: 0 auto;
+   max-width: 1200px
+}
+img {
+width: 100%;
+height: auto;
+}
 
-<h1>Create Multiple Columns</h1>
+      </style>
+   </head>
+   <body>
+      <main>
+      <div class="row">
+        <div class="header">
+          <div>
+            <img src="https://raw.githubusercontent.com/Thalenetn/thalenetn.github.io/refs/heads/main/images/autumn-6945887_1280.jpg" alt="">
+         </div>
+            <h1>Central Pennsylvania Tourist Sites</h1>
+          
+          </div>
+       
+         <div class="column">
+            <div>
+               <img src="https://raw.githubusercontent.com/Thalenetn/thalenetn.github.io/refs/heads/main/images/carnival-1492099_640.jpg" alt="">
+            </div>
+            <h2>Hershey Park</h2>
+            <p>A renowned amusement park featuring exciting rides, live entertainment, and an opportunity to learn about chocolate-making at Hershey's Chocolate World.</p>
+         <a href="http://hersheypark.com">Visit here</a>
+          </div>
 
-<div class="newspaper">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
-</div>
+      
+         <div class="column">
+            <div>
+               <img src="https://raw.githubusercontent.com/Thalenetn/thalenetn.github.io/refs/heads/main/images/lake-6641880_640.jpg" alt="">
+            </div>
+            <h2>Raystown Lake</h2>
+            <p>A scenic reservoir near Huntingdon, offering boating, fishing, hiking, and camping amid picturesque landscapes and water activities.</p>
+            <a href="https://www.nab.usace.army.mil/Missions/Dams-Recreation/">Visit here</a>
+          </div>
 
-</body>
+         <div class="column">
+            <div>
+               <img src="https://raw.githubusercontent.com/Thalenetn/thalenetn.github.io/refs/heads/main/images/lewisburg-82252_640.jpg" alt="">
+            </div>
+            <h2>Lewisburg</h2>
+            <p>A charming small town known for its historic downtown, offering boutique shops, galleries, and restaurants, as well as attractions like the Lewisburg Farmers Market and Packwood House Museum.</p>
+            <a href="https://www.lewisburgpa.com/">Visit here</a>
+          </div>
+        </div>
+        <div class="column">
+         <div>
+            <img src="https://raw.githubusercontent.com/Thalenetn/thalenetn.github.io/refs/heads/main/images/fruits-50423_640.jpg" alt="">
+         </div>
+           <h2>Central Market York</h2>
+           <p>The oldest continuously operating farmers' market in the U.S., offering a bustling atmosphere, local produce, crafts, and diverse food vendors</p>
+           <a href="https://www.centralmarketyork.com/">Visit here</a>
+          </div>
+
+        
+        
+        <div class="column">
+         <div>
+            <img src="https://raw.githubusercontent.com/Thalenetn/thalenetn.github.io/refs/heads/main/images/train-143847_640.jpg" alt="">
+         </div>
+           <h2>Railroad Museum</h2>
+           <p>Located in Strasburg, this museum boasts an extensive collection of vintage locomotives, rail cars, and exhibits, showcasing the rich history of railroading</p>
+           <a href="https://www.rrmuseumpa.org/">Visit here</a>
+          </div>
+
+        <div class="column">
+         <div>
+            <img src="https://raw.githubusercontent.com/Thalenetn/thalenetn.github.io/refs/heads/main/images/capitol-2212133_640.jpg" alt="">
+         </div>
+           <h2>Pennsylvania State Capitol</h2>
+           <p>An impressive architectural gem in Harrisburg showcasing exquisite artwork, stunning interiors, and guided tours to learn about the state's government and history.</p>
+           <a href="http://www.pacapitol.com/">Visit here</a>
+          </div>
+      </div>
+   </main>
+   </body>
 </html>
