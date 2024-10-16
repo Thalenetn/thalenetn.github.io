@@ -1,0 +1,126 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Project 2</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;   
+    }
+    
+    .my-button {
+      background-color: transparent;
+      border: 10px;
+      color: rgb(195, 128, 177);
+      cursor: pointer;
+      font-size: 30px;
+      margin-right: 32px;
+      margin-top: 10px;
+      float: right;
+      line-height: 70px;
+      display: none;
+    }
+    
+    .my-button:focus {
+      outline: none;
+    }
+    
+    nav {
+        background-color: rgb(236, 214, 233);
+        flex-wrap: wrap;
+
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  padding-bottom: 8;
+
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none
+        
+    }
+    
+    nav ul li {
+        padding: 20px 20px;
+    }
+    
+    nav ul li a {
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+    }
+    
+    nav ul li:hover {
+        background-color: #ffffff;
+    }
+    .active {
+  background-color: #ffffff;
+  color: white;
+    }
+    
+    
+    @media (max-width: 800px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      nav ul.show {
+        display: flex;
+      }
+      
+      .my-button {
+        display: block;
+      }
+    }
+    
+    @media (max-width: 600px) {
+        nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      nav ul.show {
+        display: flex;
+      }
+      
+      .my-button {
+        display: block;
+      }
+        nav {
+            background-color: rgb(195, 128, 177);
+        }
+    }</style>
+</head>
+<body>
+    <body style="background-color:rgb(243, 235, 242);"></body>
+    <nav>
+    <button class="my-button" id="my-button">
+        <i class="fas fa-bars"></i>
+    </button>
+        <ul id="mynav">
+            <li><a class="current"href="#">home</a></li>
+            <li><a href="step-1.html">step 1</a></li>
+            <li><a href="#">step 2</a></li>
+            <li><a href="#">step 3</a></li>
+            <li><a href="#">step 4</a></li>
+            <li><a href="#">step 5</a></li>
+        </ul>
+    </nav>
+
+    <script>
+    const button = document.getElementById("my-button");
+        const nav = document.getElementById("mynav");
+        
+        button.addEventListener('click', () => {
+          nav.classList.toggle('show');
+        });</script>
+        
+</body>
+</html>
