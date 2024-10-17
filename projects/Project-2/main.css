@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: rgb(243, 235, 242);
+  }
+  main {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: rgb(243, 235, 242);
+  }
+  .my-button {
+    background-color: transparent;
+    border: 10px;
+    color: rgb(195, 128, 177);
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 32px;
+    margin-top: 10px;
+    float: right;
+    line-height: 70px;
+    display: none;
+  }
+
+  .my-button:focus {
+    outline: none;
+  }
+
+  nav {
+    background-color: rgb(236, 214, 233);
+    flex-wrap: wrap;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-bottom: 8px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  nav ul li {
+    padding: 20px 20px;
+  }
+
+  nav ul li a {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+  }
+
+  nav ul li:hover {
+    background-color: #ffffff;
+  }
+  .active {
+    background-color: #ffffff;
+    color: white;
+  }
+  .responsive {
+    max-width: 90%;
+    height: auto;
+    display: flex;
+  }
+  .Title {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .description {
+    width: 65%;
+    padding: 2%;
+    margin: auto;
+    font-size: large;
+  }
+  .img-holder {
+    padding: 160px 0 0 60px;
+  }
+.rightarrow {
+    position: absolute; /* to isolate the arrow from the "normal flow" of the text */
+    right: 155px;
+}
+.leftarrow {
+    position: absolute; /* to isolate the arrow from the "normal flow" of the text */
+    left: 155px;
+}
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column;
+    }
+    .img-holder {
+      padding: 160px auto 0 auto;
+    }
+
+    nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+    nav ul.show {
+      display: flex;
+    }
+
+    .my-button {
+      display: block;
+    }
+  }
+
+  @media (max-width: 600px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    nav ul.show {
+      display: flex;
+    }
+
+    .my-button {
+      display: block;
+    }
+  }
+ 

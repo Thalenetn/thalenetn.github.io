@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.toptal.com/designers/htmlarrows/arrows/left-arrow/">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css">
+    <title>Step 1 - Project 2</title>
+      
+  </head>
+  
+  <body id="step-1">
+    <nav>
+      <button class="my-button" id="my-button">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul id="mynav">
+        <li><a href="p2.html">home</a></li>
+        <li><a class="current" href="step-1.html">step 1</a></li>
+        <li><a href="#">step 2</a></li>
+        <li><a href="#">step 3</a></li>
+        <li><a href="#">step 4</a></li>
+        <li><a href="#">step 5</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="row">
+        <div class="img-holder">
+          <img src="https://placehold.co/700" class="responsive" alt="" />
+        </div>
+
+        <div class="description">
+          <h2>Step 1</h2>
+          <p>Gather the require materials:</p>
+          <ul>
+            <li>Assorted beads of your choice</li>
+            <li>Nylon string 1-2 mm</li>
+            <li>Scissors</li>
+            <li>Lighter</li>
+            <li>Nail Polish</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <div class="rightarrow">
+    <span style='font-size:100px;'>&#8594;</span>
+   </div>
+
+   
+   <div class="leftarrow">
+    <span style='font-size:100px;'>&#8592;</span>
+   </div>
+  </button>
+
+    <script>
+      const button = document.getElementById("my-button");
+      const nav = document.getElementById("mynav");
+
+      button.addEventListener("click", () => {
+        nav.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
