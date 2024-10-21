@@ -11,6 +11,8 @@
     />
 
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <title>Home - Project 2</title>
 
   </head>
@@ -19,39 +21,40 @@
       <button class="my-button" id="my-button">
         <i class="fas fa-bars"></i>
       </button>
+      <div class="home">
+        <a href="index.html">
+<button>
+  <img src="https://raw.githubusercontent.com/Thalenetn/thalenetn.github.io/refs/heads/main/images/icons8-favorite-100.png" alt="home">
+</button>
+      </div>
       <ul id="mynav">
-        <li><a class="current" href="index.html">home</a></li>
         <li><a href="step-1.html">step 1</a></li>
-        <li><a href="#">step 2</a></li>
-        <li><a href="#">step 3</a></li>
-        <li><a href="#">step 4</a></li>
-        <li><a href="#">step 5</a></li>
+        <li><a href="step-2.html">step 2</a></li>
+        <li><a href="step-3.html">step 3</a></li>
+        <li><a href="step-4.html">step 4</a></li>
+        <li><a href="step-5.html">step 5</a></li>
       </ul>
     </nav>
 
     <main>
       <div class="row">
         <div class="img-holder">
-          <img src="https://placehold.co/700" class="responsive" alt="" />
+          <img src="https://raw.githubusercontent.com/Thalenetn/thalenetn.github.io/refs/heads/main/images/IMG_3940.jpg" class="responsive" alt="" />
         </div>
 
         <div class="description">
-          <h2>home</h2>
-          <p>Gather the require materials:</p>
-          <ul>
-            <li>Assorted beads of your choice</li>
-            <li>Nylon string 1-2 mm</li>
-            <li>Scissors</li>
-            <li>Lighter</li>
-            <li>Nail Polish</li>
-          </ul>
+          <h2>DIY Phone Charm Strap</h2>
+          <p>Phone charms have made a delightful comeback in recent years, transforming from a nostalgic accessory to a trendy statement piece. Originating in Japan, where they were initially used to decorate cell phones and prevent scratches, these charms now serve both functional and aesthetic purposes. Today i will be showing you how to make your own!p>
+          
         </div>
       </div>
     </main>
     
     <div class="rightarrow">
-      <span style='font-size:100px;'>&#8594;</span>
-     </div>
+      <button onclick="location.href='step-1.html'" class="fa-solid fa-angles-right"></i></button>
+   </div>
+
+
     <script>
       const button = document.getElementById("my-button");
       const nav = document.getElementById("mynav");
