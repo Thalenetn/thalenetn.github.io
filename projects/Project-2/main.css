@@ -55,10 +55,13 @@
   nav ul li:hover {
     background-color: #ffffff;
   }
-  .active {
-    background-color: #ffffff;
-    color: white;
-  }
+
+
+  #nav ul.active {
+    color:            #F8F8F8;
+    background-color: #4f81bd;
+}
+
   .responsive {
     max-width: 90%;
     height: auto;
@@ -113,6 +116,10 @@
   margin-top: 10px;
   margin-right: 10px;
   position: absolute;
+}
+
+.current {
+  background-color: #ffffff;
 }
   @media (max-width: 800px) {
     .row {
