@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #DBEEF9;
+  }
+  main {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #DBEEF9;
+  }
+  .my-button {
+    background-color: transparent;
+    border: 10px;
+    color: #1C5563;
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 32px;
+    margin-top: 10px;
+    float: right;
+    line-height: 70px;
+    display: none;
+  }
+.home{
+    width: 100px;
+    height: auto;
+}
+  .my-button:focus {
+    outline: none;
+  }
+
+  nav {
+    background-color: #fefefe;
+    flex-wrap: wrap;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-bottom: 8px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+  }
+
+  nav ul li {
+    padding: 20px 20px;
+  }
+
+  nav ul li a {
+    color: #1C5563;
+    font-size: 30px;
+  }
+
+  nav ul li:hover {
+    background-color: #BEA224;
+  }
+.favicon{
+   
+}
+  .responsive {
+    max-width: 90%;
+    height: auto;
+    display: flex;
+  }
+  .Title {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  .row2 {
+    display: flex;
+    flex-direction: row-reverse;
+
+  }
+  .description {
+    width: 65%;
+    padding: 2%;
+    margin: auto;
+    font-size: large;
+    color: #1C5563;
+
+  }
+  .quote{
+    font-size: 60px;
+    color: #BEA224;
+  }
+  .header{
+    font-size: 40px;
+    color: #BEA224;
+  }
+  .img-holder {
+    padding: 160px 0 0 60px;
+    
+  }
+.rightarrow {
+    position: absolute; /* to isolate the arrow from the "normal flow" of the text */
+    right: 170px;
+    margin-top: 50px;
+}
+.leftarrow {
+    position: absolute; /* to isolate the arrow from the "normal flow" of the text */
+    left: 155px;
+    margin-top: 50px;
+    transform: rotate(180deg);
+}
+.home {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+  width: 65px;
+  height: auto;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  position: absolute;
+}
+
+.current {
+  background-color: #ffffff;
+}
+  @media (max-width: 1200px) {
+    .row {
+      flex-direction: column;
+    }
+    .row2 {
+        flex-direction: column;
+      }
+    .img-holder {
+      padding: 160px auto 0 auto;
+    }
+
+    nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+    nav ul.show {
+      display: flex;
+    }
+
+    .my-button {
+      display: block;
+    }
+  }
+
+  @media (max-width: 600px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    nav ul.show {
+      display: flex;
+    }
+
+    .my-button {
+      display: block;
+    }
+  }

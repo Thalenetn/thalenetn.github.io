@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Thalenetn/thalenetn.github.io/refs/heads/main/images/icons8-bunny-100.png">
+    <title>Home - Project 3</title>
+
+  </head>
+  <body id="home">
+    <nav>
+      <button class="my-button" id="my-button">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="home">
+        <a href="index.html">
+  <img src="https://raw.githubusercontent.com/Thalenetn/thalenetn.github.io/refs/heads/main/images/favicon_alice.png" alt="home">
+
+
+      </div>
+      <ul id="mynav">
+        <li><a href="synopsis.html">Synopsis</a></li>
+        <li><a href="step-2.html">Reviews</a></li>
+        <li><a href="step-3.html">Author</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="row2">
+        <div class="img-holder">
+          <img src="https://placehold.co/600x800" class="responsive" alt="" />
+        </div>
+
+        <div class="description">
+          <h2 class="quote">"If I had a world of my own, everything would be nonsense.</h2>
+          <p>Alice's Adventures in Wonderland is an 1865 novel written by English author Charles Lutwidge Dodgson under the pseudonym Lewis Carroll. It tells of a girl named Alice falling through a rabbit hole into a fantasy world populated by peculiar, anthropomorphic creatures. The tale plays with logic, giving the story lasting popularity with adults as well as with children. It is considered to be one of the best examples of the literary nonsense genre. Its narrative course and structure, characters and imagery have been enormously influential in both popular culture and literature, especially in the fantasy genre. </p>
+          
+        </div>
+      </div>
+    </main>
+
+
+    <script>
+      const button = document.getElementById("my-button");
+      const nav = document.getElementById("mynav");
+
+      button.addEventListener("click", () => {
+        nav.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>

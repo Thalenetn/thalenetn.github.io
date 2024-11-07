@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Thalenetn/thalenetn.github.io/refs/heads/main/images/icons8-bunny-100.png">
+    <title>Home - Project 2</title>
+
+  </head>
+  <body id="home">
+    <nav>
+      <button class="my-button" id="my-button">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="home">
+        <a href="index.html">
+  <img src="https://raw.githubusercontent.com/Thalenetn/thalenetn.github.io/refs/heads/main/images/icons8-bunny-100.png" alt="home">
+
+
+      </div>
+      <ul id="mynav">
+        <li><a class="current" href="synopsis.html">Synopsis</a></li>
+        <li><a href="step-2.html">Reviews</a></li>
+        <li><a href="step-3.html">Author</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="row">
+        <div class="img-holder">
+          <img src="https://placehold.co/600x800" class="responsive" alt="" />
+        </div>
+
+        <div class="description">
+          <h2 class="header">Synopsis</h2>
+          <p>In "Alice in Wonderland," young Alice follows a white rabbit down a rabbit hole and finds herself in a peculiar and enchanting world called Wonderland. Throughout her journey, she encounters a series of eccentric and whimsical characters, such as the Cheshire Cat, the Mad Hatter, and the Queen of Hearts. Alice navigates through a topsy-turvy realm where logic is often turned upside down, and nothing is as it seems. As she tries to make sense of this extraordinary world and find her way back home, Alice embarks on a delightful and sometimes bewildering adventure, filled with curious encounters and thought-provoking riddles. Along the way, she learns valuable lessons about identity, imagination, and the power of embracing one's curiosity </p>
+          
+        </div>
+      </div>
+    </main>
+
+
+    <script>
+      const button = document.getElementById("my-button");
+      const nav = document.getElementById("mynav");
+
+      button.addEventListener("click", () => {
+        nav.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
